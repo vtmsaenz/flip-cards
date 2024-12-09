@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Flip Card Game</h1>
+        <div id="input-section">
+            <button id="upload-button">Upload Words & Definitions</button>
+            <input type="file" id="file-input" accept=".csv, .json" style="display:none;">
+            <form id="manual-input">
+                <input type="text" id="word" placeholder="Enter Word">
+                <input type="text" id="definition" placeholder="Enter Definition">
+                <button type="button" id="add-word">Add Word</button>
+            </form>
+        </div>
+        <div id="card-container"></div>
+        <button id="grade-button">Grade My Knowledge</button>
+        <div id="score-section"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
